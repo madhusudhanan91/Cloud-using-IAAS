@@ -1,0 +1,153 @@
+/** BASIC */
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #363D45;
+}
+
+/** FORMS */
+
+form {
+	margin: 0px;
+	padding: 0px;
+}
+
+/** HEADINGS */
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0px;
+}
+
+/** TEXTS */
+
+body, th, td, input, textarea, select {
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #ABABAB;
+}
+
+p, blockquote, ul, ol, dl {
+	margin-top: 0px;
+	margin-bottom: 1em;
+	text-align: justify;
+}
+
+/** LINKS */
+
+a {
+	color: #CFCFCF;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.text1 {
+	font-size: 10px;
+	text-align: center;
+}
+
+.text2 {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 14px;
+	color: #E3E3E3;
+}
+
+.text3 {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 12px;
+	color: #E3E3E3;
+}
+
+.text4 {
+	padding-left: 15px;
+	text-transform: lowercase;
+	letter-spacing: -1px;
+	font-family: "Trebuchet MS", Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 22px;
+	color: #CFCFCF;
+}
+
+.text5 {
+	padding-right: 15px;
+	text-transform: lowercase;
+	text-align: right;
+	letter-spacing: -1px;
+	font-family: "Trebuchet MS", Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	color: #CFCFCF;
+}
+
+/** STYLES */
+
+.style1 {
+	background: url(images/img3.gif) no-repeat left;
+	font-size: 10px;
+	text-align: center;
+	padding-left: 15px;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-decoration: none;
+	width: 101px;
+}
+
+.style1 a {
+	color: #FFFFFF;
+}
+
+.style1 a:hover {
+}
+
+/** BACKGROUNDS */
+
+.bg1 {
+}
+
+.list1 {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.list1 li {
+	margin-bottom: 8px;
+}
+
+.list1 a {
+	color: #CFCFCF;
+	text-decoration: underline;
+}
+
+.list1 a:hover {
+	color: #CFCFCF;
+	text-decoration: none;
+}
+
+/** MISC */
+
+.align-justify { text-align: justify; }
+.align-right { text-align: right; }
+
+img { border: none; }
+
+.img1 {
+	float: left;
+	margin: 3px 15px 0px 0px;
+}
+
+.img2 {
+	float: right;
+	margin: 3px 0px 0px 15px;
+}
+
+hr { display: none; }
+
+.hr1 {
+	height: 1px;
+}
+

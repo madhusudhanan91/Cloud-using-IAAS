@@ -1,0 +1,345 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+
+function valid()
+{
+var a=f1.name.value;
+var b=f1.code.value;
+var c=f1.dd.value;
+var d=f1.mm.value;
+var e=f1.yy.value;
+var h=f1.qual.value;
+var i=f1.exp.value;
+var j=f1.plat.value;
+var k=f1.bg.value;
+var l=f1.doj.value;
+var m=f1.preadd.value;
+var n=f1.peradd.value;
+var o=f1.phno.value;
+var p=f1.email.value;
+
+if(a=="")
+{
+alert("Enter the name");
+f1.name.focus();
+return false;
+}
+if(!isNaN(a))
+{
+alert("Enter Only Characters");
+f1.name.select();
+return false;
+}
+if(b=="")
+{
+alert("Enter Code");
+f1.code.focus();
+return false;
+}
+if(!isNaN(b))
+{
+alert("Enter the characters and integer");
+f1.code.select();
+return false;
+}
+if(c=="")
+{
+alert("Select Date");
+f1.dd.focus();
+return false;
+}
+if(isNaN(c))
+{
+alert("Enter only numbers");
+f1.mm.select();
+return false;
+}
+if(d=="")
+{
+alert("Enter the month");
+f1.mm.focus();
+return false;
+}
+if(isNaN(d))
+{
+alert("Enter Only Numbers");
+f1.mm.select();
+return false;
+}
+if(e=="")
+{
+alert("Enter the year");
+f1.yy.focus();
+return false;
+}
+if(h=="")
+{
+alert("Enter the qualification");
+f1.qual.focus();
+return false;
+}
+if(!isNaN(h))
+{
+alert("Enter Only Character wise");
+f1.qual.focus();
+return false;
+}
+if(i=="")
+{
+alert("Enter the experience");
+f1.exp.focus();
+return false;
+}
+if(o=="")
+{
+alert("Enter the phone number");
+f1.phno.focus();
+return false;
+
+}
+
+if(o !="")
+{
+ var len =parseInt(document.f1.phno.value.length);
+    for(i=0;i<=len;i++)
+    {
+     var str = document.f1.phno.value.substring(i,i+1);
+     if(!((str>=0&&str<=9)||(str=="-")))
+       {  
+        alert("Enter Phone number with code eg:044-29829829");
+        f1.phno.select();
+        return false;
+       }
+    }
+}
+if(p=="")
+{
+alert("Enter u r EMail");
+f1.email.focus();
+return false;
+}
+if(j=="")
+{
+alert("Enter The platform");
+f1.plat.focus();
+return false;
+}
+if(k=="")
+{
+alert("ENter u r Blood group");
+f1.bg.focus();
+return false;
+}
+
+if(l=="")
+{
+alert("Enter Date of Joining");
+f1.doj.focus();
+return false;
+}
+if(m=="")
+{
+alert("Enter u r present address");
+f1.preadd.focus();
+return false;
+}
+if(n=="")
+{
+alert("Enter u r permanent address");
+f1.peradd.focus();
+return false;
+}
+
+}
+</script>
+<style type="text/css">
+<!--
+.style1 {color: #000000}
+.style2 {
+	font-size: larger;
+	color: #3300FF;
+}
+.style3 {color: #330000}
+.style9 {font-size: 24px}
+-->
+</style>
+</head>
+<body>
+<div id="Layer4" style="position:absolute; left:74px; top:185px; width:638px; height:66px; z-index:4; color: #660000;">
+  <p>U should provide all the information about the employee. The <span class="style1">*</span> operator fields are mandatory. Please provide the values as label specified. Before submit your details please ensure all the details are correct. If u not satisfied with some details then press Reset Button to clear all the fields. </p>
+  <p>&nbsp;</p>
+</div>
+<div id="Layer6" style="position:absolute; left:114px; top:317px; width:581px; height:567px; z-index:6; font-weight: bold;">
+  <div align="center" class="style2">
+    <p><u>EMPLOYEE DETAILS</u></p>
+    <form name="f1" method="post" action="emp.jsp" onsubmit="return valid()">
+      <div align="left">
+        <table width="583" >
+          <tr>
+            <td width="261"><span class="style1">Name:</span></td>
+            <td width="306"><input type="text" name="name"></td>
+          </tr>
+          <tr>
+            <td><span class="style1">*Code :</span></td>
+            <td><input type="text" name="code"></td>
+          </tr>
+          <tr>
+            <td><span class="style1">Date Of Birth : </span></td>
+            <td><span class="style3">Date:
+                <select name="dd">
+				<option value="1">1</option>
+				<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+
+                </select> 
+              Month:
+              <select name="mm">
+<option value="01">01</option>
+				<option value="02">02</option>
+<option value="03">03</option>
+<option value="04">04</option>
+<option value="05">05</option>
+<option value="06">06</option>
+<option value="07">07</option>
+<option value="08">08</option>
+<option value="09">09</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+
+              </select> 
+              Year:
+              <input name="yy" type="text" size="4" maxlength="4">
+            </span></td>
+          </tr>
+          <tr>
+            <td><span class="style3">Gender:</span></td>
+            <td><span class="style3">
+              <input name="sex" type="radio" value="male">
+              Male
+              <input name="sex" type="radio" value="female"> 
+              Female </span></td>
+          </tr>
+          <tr>
+            <td><span class="style3">Qualification:</span></td>
+            <td><input name="qual" type="text"></td>
+          </tr>
+          <tr>
+            <td><span class="style3">Date Of Join: </span></td>
+            <td><input name="doj" type="text"></td>
+          </tr>
+          <tr>
+            <td><span class="style3">Experience:</span></td>
+            <td><input name="exp" type="text"></td>
+          </tr>
+          <tr>
+            <td><span class="style3">*Platform:</span></td>
+            <td><input name="plat" type="text"></td>
+          </tr>
+          <tr>
+            <td><span class="style3">*Blood Group: </span></td>
+            <td><input type="text" name="bg"></td>
+          </tr>
+          <tr>
+            <td><span class="style3">Present Address: </span></td>
+            <td><textarea name="preadd" cols="15" rows="3"></textarea></td>
+          </tr>
+          <tr>
+            <td><span class="style3">Permanent Address:</span></td>
+            <td><textarea name="peradd" cols="15" rows="3"></textarea></td>
+          </tr>
+          <tr>
+            <td><span class="style3">Phone Number: </span></td>
+            <td><input type="text" name="phno"></td>
+          </tr>
+          <tr>
+            <td><span class="style3">*Email:</span></td>
+            <td><input type="text" name="email"></td>
+          </tr>
+        </table>
+        <p>
+        <center>  <input type="submit" name="Submit" value="Register">
+          <input type="reset" name="Submit2" value="Reset"></center>
+        
+      </div>
+    </form>
+  </div>
+</div>
+<table width="100%" height="80" border="0" cellpadding="0" cellspacing="0" bgcolor="#696969">
+  <tr>
+    <td height="108" >
+      <center class="style9">
+        <font color="#B1C4DE">AUTOMATION AND MANAGEMENT SERVICE</font> 
+      </center></td>
+  </tr>
+</table>
+<table width="100%" height="22" border="0" cellpadding="0" cellspacing="0" bgcolor="#8F9CBE">
+  <tr align="center"> 
+    <td width="50%"><a href="hrmenu.jsp" ><font size="2" color="#FFFFFF">BACK</font></a></td>
+    <td width="50%"><a href="logout.html" ><font size="2" color="#FFFFFF">LOGOUT</font></a></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<hr width="100%">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<hr width="100%">
+<p>&nbsp;</p>
+</body>
+</html>

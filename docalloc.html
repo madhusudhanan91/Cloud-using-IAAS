@@ -1,0 +1,86 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript" type="text/JavaScript">
+function valid()
+{
+	var a=f1.prcode.value;
+	var b=f1.tasktype.value;
+	var c=f1.grouptype.value;
+
+if(a=="")
+{
+	alert("U MUST ENTER THE PROJECT Code!!");
+	f1.prcode.focus();
+	return false;
+}
+if(b=="")
+{
+	alert("U MUST ENTER EITHER 1 (OR) 2!!");
+	f1.tasktype.focus();
+	return false;
+}
+if(c=="")
+{
+	alert("U MUST ENTER EITHER 1 (OR) 2!!");
+	f1.grouptype.focus();
+	return false;
+}
+
+}
+</script>
+<style type="text/css">
+<!--
+.style1 {
+	color: #330000;
+	font-weight: bold;
+}
+.style2 {color: #FFFFFF}
+.style5 {color: #3300FF; font-weight: bold; }
+.style9 {font-size: 24px}
+-->
+</style>
+</head>
+
+<body>
+<div id="Layer2" style="position:absolute; left:313px; top:181px; width:271px; height:18px; z-index:2">
+  <div align="center" class="style1">Document Allocation Form </div>
+</div>
+<div id="Layer3" style="position:absolute; left:256px; top:234px; width:376px; height:185px; z-index:3">
+  <form name="f1" method="post" action="docallocation.jsp" onsubmit="return valid()">
+    <table width="375" border="1">
+      <tr>
+        <td width="167"><span class="style5">Project Code </span></td>
+        <td width="302"><input type="text" name="prcode"></td>
+      </tr>
+      
+      <tr>
+        <td><span class="style5">Group Type </span></td>
+        <td><input type="text" name="grouptype"></td>
+      </tr>
+    </table>
+    <p align="center"><input type="submit" name="Submit" value="Submit">
+      <input name="Reset" type="reset" id="Reset" value="Reset">
+    </p>
+    <p>&nbsp;</p>
+  </form>
+</div>
+<table width="100%" height="80" border="0" cellpadding="0" cellspacing="0" bgcolor="#696969">
+  <tr> 
+    <td width="942" height="108" > <center class="style9">
+        <font color="#B1C4DE">AUTOMATION OF IT PROCESS AND MANAGEMENT</font> 
+      </center></td>
+  </tr>
+</table>
+<table width="100%" height="22" border="0" cellpadding="0" cellspacing="0" bgcolor="#8F9CBE">
+  <tr align="center"> 
+    <td width="50%"><a href="hrmenu.jsp"><font color="#FFFFFF" size="2">BACK</font></a></td>
+    <td width="50%"><a href="logout.html"><font color="#FFFFFF" size="2">LOGOUT</font></a></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

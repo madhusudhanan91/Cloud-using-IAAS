@@ -1,0 +1,71 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+.style9 {font-size: 24px}
+-->
+</style>
+<script language="JavaScript" type="text/JavaScript">
+function val()
+{
+var a= document.frm.prcode.value;
+
+if(a=="")
+{
+alert("Enter project code");
+frm.prcode.focus();
+return false;
+}
+}
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+</script>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table width="100%" height="80" border="0" cellpadding="0" cellspacing="0" bgcolor="#696969">
+  <tr>
+    <td width="950" height="108" >
+      <center class="style9">
+        <font color="#B1C4DE">AUTOMATION AND MANAGEMENT SERVICE</font>  
+      </center></td>
+  </tr>
+</table>
+<table width="100%" height="22" border="0" cellpadding="0" cellspacing="0" bgcolor="#8F9CBE">
+  <tr align="center"> 
+    <td width="50%"><a href="hrmenu.jsp"><font color="#FFFFFF" size="2">BACK</font></a> 
+    </td>
+    <td width="50%"><a href="logout.html" ><font color="#FFFFFF" size="2">SIGN 
+      OUT </font></a></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<form method="post" action="allotproj.jsp" name="frm" onSubmit="return val()">
+  <p align="center">&nbsp;</p>
+  <p align="center">&nbsp;</p>
+   
+  <div align="center">
+    <table bgcolor="#5F5FBC"width="75%">
+      <tr> 
+        <td width="38%"><font color="#FFFFFF">Enter  Project Code </font></td>
+        <td width="62%"> 
+          <input type="text" name="prcode">
+        </td>
+      </tr>
+    </table>
+    <p>&nbsp;</p>
+    <p>
+      <input type="submit" name="b1" value="Submit">
+      <input type="reset" name="b2" value="Reset">
+    </p>
+  </div>
+</form>
+</body>
+</html>

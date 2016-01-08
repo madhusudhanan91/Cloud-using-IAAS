@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+function valid()
+{
+	var a=f1.userid.value;
+	var b=f1.pass.value;
+	var c=f1.cpass.value;
+	var d=f1.des.value;
+
+if(a=="")
+{
+	alert("User id cannot be blank");
+	f1.userid.focus();
+	return false;
+}
+
+if(b=="")
+{
+	alert("Password cannot be blank");
+	f1.pass.focus();
+	return false;
+}
+if(c=="")
+{
+	alert("Confirm the password");
+	f1.cpass.focus();
+	return false;
+}
+if(d=="")
+{
+	alert("Designation cannot be blank");
+	f1.des.focus();
+	return false;
+}
+
+if(b!=c)
+{
+	alert("Both password box should be the same");
+	f1.pass.focus();
+	return false;
+}
+
+
+}
+</script>
+<style type="text/css">
+<!--
+.style1 {color: #FFFFFF}
+.style2 {
+	color: #9900FF;
+	font-weight: bold;
+	font-size: larger;
+}
+.style3 {
+	color: #3300FF;
+	font-weight: bold;
+}
+.style9 {font-size: 24px}
+-->
+</style>
+</head>
+
+<body>
+<div id="Layer2" style="position:absolute; left:282px; top:172px; width:239px; height:34px; z-index:2">
+  <div align="center" class="style2">NEW USER REGISTRATION </div>
+</div>
+<div id="Layer3" style="position:absolute; left:186px; top:250px; width:412px; height:286px; z-index:3">
+  <form name="f1" method="post" action="newuservalidate.jsp" onsubmit="return valid()">
+    <table width="410" height="203" >
+      <tr>
+        <td><span class="style3">*Enter UR User ID </span></td>
+        <td><strong>:</strong>          <input type="text" name="userid"></td>
+      </tr>
+      <tr>
+        <td><span class="style3">*Enter Password </span></td>
+        <td><strong>:</strong>          <input type="text" name="pass"></td>
+      </tr>
+      <tr>
+        <td><span class="style3">*Confirm Password </span></td>
+        <td><strong>:</strong>          <input type="text" name="cpass"></td>
+      </tr>
+      <tr>
+        <td><span class="style3">*Designation</span></td>
+        <td><strong>:</strong>          <input type="text" name="des"></td>
+      </tr>
+    </table>
+    <p align="center">
+      <input type="submit" name="Submit" value="Submit">
+      <input name="Reset" type="reset" id="Reset" value="Reset">
+    </p>
+    <p>&nbsp;</p>
+  </form>
+</div>
+<table width="100%"   bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td>
+      <table width="100%" height="80" border="0" cellpadding="0" cellspacing="0" bgcolor="#696969">
+        <tr>
+          <td width="100%" height="108" >
+            <center class="style9">
+              <font color="#B1C4DE">AUTOMATION AND MANAGEMENT SERVICE</font> 
+            </center></td>
+        </tr>
+      </table>
+      <table width="100%" height="22" border="0" cellpadding="0" cellspacing="0" bgcolor="#8F9CBE">
+        <tr align="center">
+          <td width="50%"><a href="home.jsp" class="nav" title="Home" target="right1"><font size="2" color="#FFFFFF">HOME</font></a></td>
+          <td width="50%"><a href="logout.html" class="nav" title="Contact Us" target="right1"><font color="#FFFFFF" size="2">SIGN OUT </font></a></td>
+        </tr>
+      </table>
+</table>
+<p>&nbsp;</p>
+<hr>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

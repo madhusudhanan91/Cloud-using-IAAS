@@ -1,0 +1,100 @@
+<%@ page language="java" import="java.io.*,java.sql.*" %>
+<html>
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage Express 2.0">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+</script>
+</head>
+<body link="#860653" vlink="#FF0000" alink="#911200" background="images/Maize Bkgrd.jpg">
+<%
+	String user=request.getParameter("user");
+	String pass=request.getParameter("pass");
+%>
+<div id="Layer1" style="position:absolute; left:25px; top:14px; width:58px; height:25px; z-index:1; font-weight: bold;"><a href="logout.html">Sign out</a> </div>
+<div id="Layer2" style="position:absolute; left:31px; top:62px; width:245px; height:59px; z-index:2">
+  <table width="247" height="60">
+    <tr>
+      <td width="117" bgcolor="#9999FF"><div align="center"><strong>Employer Name </strong></div></td>
+	
+      <td width="114" bgcolor="#9999FF"><div align="center"><strong>Employer Code </strong></div></td>
+    </tr>
+    <tr>
+      <td><%=user%></td>
+      <td><%=pass%></td>
+    </tr>
+  </table>
+</div>
+<div id="Layer3" style="position:absolute; left:83px; top:15px; width:60px; height:23px; z-index:3; font-weight: bold; color: #330000;"><u><a href="empdetails.html">Registration</a></u></div>
+
+
+<center>
+  <h2><u><font color="blue">PROJECT MANAGER MENU </font></u></h2>
+</center>
+<div align="left">
+<div align="center"><center>
+<table cellpadding="3" cellspacing="0"  dir="ltr">
+    <tr>
+        <th width="177" colspan="2" align="left" ><div align="center"><font size="4" face="Tahoma">ADD PROJECTS </font></div></th>
+    </tr>
+    <tr>
+        <td colspan="2"><p align="center"><a href="addpro.jsp"><font ><strong><u>New Projects </u></strong></font></a></p>
+        </td>
+    </tr>
+</table>
+
+<p>&nbsp;</p>
+</center></div>
+<div align="center"><center>
+  <table  cellpadding="3" cellspacing="0" >
+    <tr>
+        <th width="179" colspan="2" align="left"><div align="center"><font size="4" face="Tahoma">VIEW PROJECTS </font></div></th>
+    </tr>
+    <tr>
+        <td colspan="2"><p align="center"><a href="viewcompleted.jsp"><font color="#800000"><strong><u>
+        Completed Projects </u></strong></font></a></p>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"><p align="center"><font color="#800000"><strong><u><a href="view.jsp">Current Projects </a></u></strong></font></p>
+        </td>
+    </tr>
+</table>
+
+  <p>&nbsp;</p>
+</center></div>
+<div align="center"><center>
+<table  cellpadding="3" cellspacing="0" >
+    <tr>
+        <th width="182" colspan="2" align="left" ><div align="center"><font size="4" face="Tahoma">UPDATE PROJECTS</font></div></th>
+    </tr>
+    <tr>
+        <td colspan="2"><p align="center"><a href=""><font color="#800000"><strong><u>Update projects </u></strong></font></a></p>
+        </td>
+    </tr>
+</table>
+<p>&nbsp;</p>
+</center></div>
+<div align="center"><center>
+<table  cellpadding="3" cellspacing="0" >
+    <tr>
+        <th width="182" colspan="2" align="left" ><font size="4" face="Tahoma">DELETE PROJECTS </font></th>
+    </tr>
+    <tr>
+        <td colspan="2"><p align="center"><a href=""><font color="#800000"><strong>
+        <u>Delete Projects </u></strong></font></a></p>
+        </td>
+    </tr>
+</table>
+</center></div>
+</body>
+</html>
